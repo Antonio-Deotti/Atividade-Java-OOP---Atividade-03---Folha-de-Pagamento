@@ -1,4 +1,4 @@
-public abstract class Funcionario {
+public abstract class Funcionario implements Pagavel {
 
     private String nome;
     private String cpf;
@@ -16,6 +16,7 @@ public abstract class Funcionario {
         return cpf;
     }
 
+    @Override
     public abstract double calcularSalario();
 
 
